@@ -8,6 +8,8 @@ const chatMessages = document.getElementById('chatMessages');
 const themeToggle = document.getElementById('themeToggle');
 
 // ==================== CONFIGURACIÓN AZURE ====================
+const endpoint = "https://rodirx.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=rodrix&api-version=2021-10-01&deploymentName=production";
+const apiKey = "66aUQunUxlj1dcJ7wM6ioUEZNvfO52EXhyb2XUULjWMqiqpi9vvTJQQJ99BKACZoyfiXJ3w3AAAaACOGLxkb"; // ⚠️ Solo pruebas
 
 // ==================== CHATBOT ====================
 // Abrir/cerrar widget
