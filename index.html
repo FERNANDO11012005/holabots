@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnovVentas | Soluciones Empresariales Inteligentes</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ======= HEADER ======= -->
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Logo"> InnovVentas
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Contacto</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero">
+    <h1>Soluciones Inteligentes para tu Empresa</h1>
+    <p>
+      InnovVentas combina tecnología, análisis de datos y atención automatizada
+      para optimizar tus procesos comerciales. Nuestro asistente virtual te acompaña en todo momento.
+    </p>
+    <button onclick="document.getElementById('chatWidget').classList.add('open')">
+      Habla con el asistente
+    </button>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    © 2025 InnovVentas - Todos los derechos reservados
+  </footer>
+
+  <!-- ======= CHATBOT ======= -->
+  <button id="chatBtn" class="chat-btn" aria-label="Abrir chat de soporte">
+    💬
+  </button>
+
+  <div id="chatWidget" class="chat-widget" aria-live="polite">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Bot" class="chat-avatar">
+        <div>
+          <strong>Asistente InnovVentas</strong>
+          <p class="status">En línea 🟢</p>
+        </div>
+      </div>
+      <button class="close-chat" id="closeChat" aria-label="Cerrar chat">✕</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="msg ai">
+        <div class="bubble">
+          👋 ¡Hola! Soy el asistente virtual de <strong>InnovVentas</strong>.<br>
+          ¿Cómo puedo ayudarte hoy?
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Escribe tu mensaje..." aria-label="Escribir mensaje" />
+      <button id="sendBtn" class="send-btn">Enviar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
